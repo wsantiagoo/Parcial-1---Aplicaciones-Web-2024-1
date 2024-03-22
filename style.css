@@ -1,0 +1,109 @@
+  * {
+    margin: 0;
+  }
+
+   img {
+    display: block;
+    /* max-width: 100%; */
+  } 
+
+html{
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-size: 400;
+  color: #a3a5ae;
+}
+
+h1, h2{  
+  color: #4e4c60;
+}
+
+header{
+  text-align: center;
+  margin-block: 1rem;
+}
+
+header span{
+  font-weight: 150;
+}
+
+header p{
+  margin-top: 2rem;
+  color: #a3a5aa;
+}
+
+main{
+  padding-block-end: 1rem;
+}
+
+.header-sty{
+  max-width: auto;
+  margin-inline: auto;
+  padding-inline: 5rem;
+}
+
+.for-grid{
+  
+  display: grid;
+  grid-auto-columns: 1fr;
+  gap: 3rem;
+}
+@media (min-width: 1000px){
+  .for-grid{
+    grid-template-areas:
+      '  . two   .   '
+      'one two   four'
+      'one three four'
+      '  . three .   '
+  } 
+  .for-grid > :nth-child(1){
+    grid-area: one;
+  }
+  .for-grid > :nth-child(2){
+    grid-area: two;
+  }
+  .for-grid > :nth-child(3){
+    grid-area: three;
+  }
+  .for-grid > :nth-child(4){
+    grid-area: four;
+  }
+}
+
+.card{
+  padding: 2rem;
+  box-shadow: 0 1rem 1.5rem -0.5rem rgba(23, 24, 24, 0.15);
+  border-radius: 0.7rem;
+  border-top: 5px solid;
+}
+
+.card__title{
+  font-size: 1.2rem;
+}
+
+.card__image{
+  margin-top: 1rem;
+  margin-left: auto;
+  width: 60px;
+}
+
+.card p{
+  font-size: 0.75rem;
+  margin-block: 1rem 2rem;
+}
+
+.Supervisor-cyan{
+  border-color: #62dada;
+}
+
+.Team_Builder-red{
+  border-color: #ea5353;
+}
+
+.Karma-orange{
+  border-color: #fc9b1d;
+}
+
+.Calculator-blue{
+  border-color: #4a9dfc;
+}
